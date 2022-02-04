@@ -1,0 +1,264 @@
+/*Fuentes importadas Google-fonts*/ 
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Nanum+Gothic:wght@400;800&family=Quicksand:wght@400;700&family=Raleway:wght@300&display=swap');
+
+/* Reset e inicio de estilos */
+*{margin: 0; padding: 0;}
+*{box-sizing:border-box;}
+
+/*-------------------->                      ESTILOS GENERALES                    <---------------************/
+.navbar{ /* Disposicion de elementos*/
+    
+    padding: 10px;
+    background: black;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+    min-height: 90px;
+}
+
+.logo-navegacion{ /*estilos al logo de la marca*/
+    width: 7em;
+    cursor: pointer;
+}
+
+.texto-logo{ /*Estilos al texto del logo*/
+    font-family: 'Audiowide', cursive;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.nav-link{
+    color: #fff;
+}
+.nav-link:hover{
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: bolder;
+}
+
+.offcanvas-body{
+    background: #000;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+
+.navbar-toggler {
+    color: rgba(255, 255, 255, 0.55);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.nav-link .active{
+    color: #fff; 
+    font-weight: bolder;
+}
+h2{ /*Estilos a los subtitulos*/
+    background: #242424;
+    height: 2.3em;
+    color:#fff;
+    width: 100%;
+    min-width: 20rem;
+    padding: 0.5em 1.2em;
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.botones-rrss a { /*Estilos a los botones de RRSS*/
+    color: #ffffff;
+    font-size: 28px;
+    margin: 0 20px;
+    transition: transform 0.4s;
+}
+.botones-rrss .facebook:hover { /*Estilos animados al boton Face*/
+    transform: scale(1.3);
+}
+.botones-rrss .whatsapp:hover { /*Estilos animados al boton WPP*/
+    transform: scale(1.3);
+}
+.botones-rrss .instagram:hover { /*Estilos animados al boton Instagram*/
+    transform: scale(1.3);
+}
+.texto-logo-footer{
+    font-family: 'Audiowide', cursive;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    text-decoration: none;
+}
+.texto-footer{
+    color: #fff;
+    font-size: 0.7em;
+    word-spacing: 3px;
+}
+
+
+/***************------------------------ ESTILOS PARA EL INDEX-------------------------------************/
+.cuerpo-index{ /*Justificaciones y layout del cuerpo index*/
+    margin-top: 8em;
+}
+.tituloScroll { /*Estilos a cada subtitulo*/
+    height: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9em;
+    padding: calc((2em - 1em)/2);
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.imagenIndex{ /*Justificaciones de tamano a cada imagen del INDEX*/
+    width: 100%;
+    max-width: 576px;
+    height: auto;
+    padding-top: 3px;
+    transition: transform 0.2s;
+}
+.imagenIndex:hover{ /*Justificaciones de tamano a cada imagen del INDEX*/
+    transform: scale(1.02);
+}
+
+/****************------------------------ ESTILOS PARA SOBRE MI-------------------------------************/
+.seccion-about{ /*Disposicion de los elementos justificaciones*/
+    margin-top: 7.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(../media/autoretrato-4.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+}
+.contParrafoAbout{ /*Estilo al contendor de los parrafos - posicionamiento de sus padding*/
+    padding:  0px 15px 30px 20px;  
+}
+.contParrafoAbout p{ /*Estilo a los parrafos y su fondo*/
+    background: rgba(0,0,0,0.5);
+    color: whitesmoke;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+/****************------------------------ ESTILOS  PARA PORTAFOLIO---------------------------************/
+.seccion-portfolio{/*Justificaciones al contenido de portafolio*/
+    display: flex;
+    flex-direction: column;
+    margin-top:7.1em;
+    box-sizing: border-box;
+}
+.seccion-portfolio h3, p {
+    padding: 15px;
+    font-size: 1.2em;
+}
+.galeria{
+    list-style: none;
+    padding: 3%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.galeria img { /*--Propiedades a las imagenes de la galeria--*/
+    width: 100%;
+    max-width: 240px;
+    border: solid 1px #999;
+    border-radius: 5px;
+}
+.modal{/* Estilos al modal*/
+    display: none;
+}
+.modal:target { /*Fondo contenedor de la vista modal*/
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.foto{ /*Propiedades del contenedor de la imagen en modo vista modal*/
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto a{ /* Estilos a los signos <  > */
+    color: #fff;
+    font-size: 50px;
+    text-decoration: none;
+    margin: 40px 10px;
+}
+.foto a:nth-child(2){ /* Justificacion de los signos < X >*/
+    margin-top: 20px;
+    height: 80%;
+    flex-shrink: 2;
+}
+.foto img { /* Propiedades a la imagen en modo modal */
+    width: 360px;
+    height: auto;
+    max-width: 100%;
+    border: solid 3px #e9e9e9;
+    box-sizing: border-box;
+}
+.cerrar{ /* Propiedades al boton de cerrar en vista modal*/
+    display: block;
+    background: #fff;
+    width: 35px;
+    height: 35px;
+    margin: 140px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    padding: 8px;
+    border-radius: 50%;
+    line-height: 20px;
+}
+
+/****************--------------- ESTILOS PARA OPINIONES-------------------------------************/
+ .cuerpo-opiniones{ /*Justificaciones*/
+    margin-top: 7.1em;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-image: url(../media/street-4.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+/****************--------------- ESTILOS PARA OPINIONES-------------------------------************/
+.cuerpo-opiniones{ /*Justificaciones*/
+    margin-top: 7.1em;
+    background-image: url(../media/street-4.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.caja-opiniones{ /* Justificaciones al contenido - alineado de box opiniones*/
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+.box-opinion{ /*Estilos a cada opinion*/
+    background: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+h3{ /*Estilos a name de las opiniones*/
+    font-size: 1.2em;
+}
+.box-opinion p { /*Estilos al contenido de parrafos opiniones*/
+    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/****************--------------- ESTILOS PARA CONTACTO-------------------------------************/
+.cuerpo-contacto{ /*Posicionamiento y justificacion del cuerpo de*/
+    margin-top: 7.1em;
+}
+

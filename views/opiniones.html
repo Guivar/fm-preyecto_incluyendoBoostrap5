@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Meta tags requeridos -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- link tags propios -->
+        <link rel="shortcut icon" href="../media/favicon.ico" type="image/x-icon">
+        <title>Sobre mi | FM Fotografia</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
+        <!-- Estilos propios CSS-->
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+        <!-- Estilos de fuentes-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand link-logo-navegacion" href="../index.html"><img class="logo-navegacion d-inline-block align-text-center " src="../media/logo2.png"><h1 class="texto-logo">fotografia</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="./sobre-mi.html">Sobre Mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../views/portafolio.html">Portafolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="opiniones.html">Opiniones</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="cuerpo-opiniones">
+
+            <section class="seccion-opiniones">
+                <h2 class="subAbout">Opiniones</h2>
+                <div class="caja-opiniones">
+                    <div class="box-opinion">
+                        <h3 class="nombreUsuario">Name cliente 1</h3>
+                        <!--Valoracion 1-->
+                        <p>Cras imperdiet arcu ullamcorper augue aliquam gravida. Nulla aliquet dolor sit amet volutpat scelerisque. Nulla maximus ornare dui non commodo.</p>
+                    
+                    </div>
+                    <div class="box-opinion">
+                        <h3 class="nombreUsuario">Name cliente 2</h3>
+                        <!--Valoracion 2-->
+                        <p>Cras imperdiet arcu ullamcorper augue aliquam gravida. Nulla aliquet dolor sit amet volutpat scelerisque. Nulla maximus ornare dui non commodo.</p>
+                        
+                    </div>   
+                    <div class="box-opinion">
+                        <h3 class="nombreUsuario">Name cliente 3</h3>
+                        <!--Valoracion 2-->
+                        <p>Cras imperdiet arcu ullamcorper augue aliquam gravida. Nulla aliquet dolor sit amet volutpat scelerisque. Nulla maximus ornare dui non commodo.</p>
+                        
+                    </div>
+                    <div class="box-opinion">
+                        <h3 class="nombreUsuario">Name cliente 4</h3>
+                        <!--Valoracion 2-->
+                        <p>Cras imperdiet arcu ullamcorper augue aliquam gravida. Nulla aliquet dolor sit amet volutpat scelerisque. Nulla maximus ornare dui non commodo.</p>
+                        
+                    </div>  
+                </div>
+            </section>
+
+            <hr class="my-5" />
+
+            <!--Section: valoracion-->
+            <section class="mb-5">
+                <h4 class="mb-5 text-center"><strong>Dejanos tu experiencia</strong></h4>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6">
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-6">
+                            <div class="col">
+                                <div class="form-outline">
+                                    <input type="text" id="nombre" class="form-control" />
+                                    <label class="form-label" for="nombre">Nombre</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-6">
+                            <input type="email" id="email" class="form-control" />
+                            <label class="form-label" for="email">Direccion de Email</label>
+                        </div>
+
+                        <!-- Message input -->
+                        <div class="form-outline mb-6">
+                            <textarea class="form-control" id="asunto" rows="4"></textarea>        
+                            <label class="form-label" for="asunto" style="margin-left: 0px" >Deje aqui su opinio</label>
+                            <div class="form-notch">
+                                <div class="form-notch-leading" style="width: 9px"></div>
+                                <div class="form-notch-middle" style="width: 60px"></div>
+                                <div class="form-notch-trailing"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Valoracion de opinion -->
+                        <div>
+                            <label for="rango">Valoracion</label>
+                            <input class="inform" type="range" name="rango"/>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-dark btn-block mb-4">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <!--Pie de pagina-->
+        <footer class="bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <!--Contacto de RRSS-->
+                    <section class="d-flex justify-content-center align-items-center botones-rrss">
+                        <a href="https://www.facebook.com/franco.morales.1291" target="_blank" class="facebook "><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/5493886573210?text=Hola,%20necesito%20informacion." target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/francomorales14/?hl=es-la" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    </section>
+                </div>
+                <div class="row text-uppercase pb-auto ">
+                    <section class= "d-flex justify-content-center align-items-center" >
+                        <span class="texto-logo-footer justify-content-center align-text-center p-2">fm|fotografia</span>
+                        <span class="text-white texto-footer">©copyright-2022 | Pagina web creada con pasion por Guillermo Varela</span>
+                    </section>
+                </div>
+            </div>
+        </footer>
+
+       <!-- Option 2: Separate Popper and Bootstrap JS -->
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </body>
+
+</html>
